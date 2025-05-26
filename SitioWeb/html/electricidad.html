@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricidad</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/teoria.css">
+    <script defer src="../js/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <div class="logo">
+        <img src="../assets/logo.jfif" alt="ElectroMag Academy" />
+      </div>
+      <nav class="nav-menu">
+        <a href="home.html">Inicio</a>
+        <a href="electricidad.html">Electricidad</a>
+        <a href="magnetismo.html">Magnetismo</a>
+        <a href="simulaciones.html">Simulaciones</a>
+        <a href="recursos.html">Recursos</a>
+        <span class="icon">🌙</span>
+        <span class="icon faq-toggle" title="Preguntas frecuentes">❓</span>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article>
+      <h1 id="temario-electricidad">Teoría de Electricidad</h1>
+      <h2>Temario</h2>
+      <ul>
+        <li><a href="electricidad.html#seccion-1">Campos eléctricos</a></li>
+        <li><a href="electricidad.html#seccion-2">Ley de Gauss</a></li>
+        <li><a href="electricidad.html#seccion-3">Potencial eléctrico</a></li>
+        <li><a href="electricidad.html#seccion-4">Capacitancia y materiales</a></li>
+        <li><a href="electricidad.html#seccion-5">Corriente y Resistencia</a></li>
+        <li><a href="electricidad.html#seccion-6">Corriente directa</a></li>
+      </ul>
+      <hr>
+    </article>
+    <section id="seccion-1">
+      <h2>Campos eléctricos</h2>
+      <h3>Propiedades de las cargas eléctricas</h3>
+      <p>Las cargas eléctricas pueden ser positivas o negativas. Cargas iguales se repelen y opuestas se atraen. La carga está cuantizada en múltiplos del electrón (e = 1.602 × 10<sup>-19</sup> C) y se conserva en cualquier sistema cerrado. La transferencia ocurre por movimientos de electrones, como en la electrización por fricción.</p>
+      <h3>Carga por inducción</h3>
+      <p>Un objeto conductor puede cargarse sin contacto directo mediante un proceso de inducción, en el cual una carga externa induce una redistribución de las cargas internas. Al conectar a tierra, el exceso de carga escapa y el objeto puede quedar cargado con signo opuesto al del cuerpo cercano. En aislantes, ocurre una polarización localizada.</p>
+      <h3>Ley de Coulomb</h3>
+      <p>La fuerza entre dos cargas puntuales (sin dimensión) es directamente proporcional al producto de las magnitudes de las cargas e inversamente proporcional al cuadrado de distancia entre ellas.</p>
+      <p>La fuerza entre dos cargas puntuales es:</p>
+      <div>\( F = K_e \cdot \frac{ |q_1 q_2| }{ r^2 } \)</div>
+      <br>
+      <p>Donde \( K_e = 8.99 \times 10^9 \, \text{N} \cdot \text{m}^2/\text{C}^2 \). Es una fuerza atractiva o repulsiva dependiendo del signo de las cargas, y actúa a lo largo de la líneas que las une.</p>
+      <h3>Campo eléctrico</h3>
+      <p>Un campo eléctrico es un campo de fuerza creado por la atracción y repulsión de cargas eléctricas (la causa del flujo eléctrico) y se mide en Voltios por metro (V/m). El flujo decrece con la distancia a la fuente que provoca el campo. Es el <i>efecto invisible</i> que una carga eléctrica genera a su alrededor, y que puede empujar o atraer a otras cargas, aunque no se toquen.</p>
+      <p>El campo eléctrico es la fuerza por unidad de carga de prueba:</p>
+      <div>\(\vec{E} = \frac{\vec{F}}{q_0}\)</div>
+      <p>Para una carga puntual:</p>
+      <div>\(\vec{E} = K_e \cdot \frac{q}{r^2} \cdot \hat{r}\)</div>
+      <p>Es un vector que describe la influencia de una carga sobre su entorno, dependiendo que la carga de prueba.</p>
+      <h4>Aplicaciones: </h4>
+      <details>
+        <summary>Televisores antiguos y Osciloscopios</summary>
+        <p>Se usaban tubos de rayos catódicos, donde un electrón es acelerado por un campo eléctrico uniforme entre dos placas metálicas. Este principio también se aplica en experimentos de física de partículas, como en aceleradores.</p>
+        <ul>
+          <li>Cuando un electrón entra entre las placas, el campo eléctrico genera una fuerza constante que desvía su trayectoria en una forma parabólica.</li>
+          <li>Esto se modela con las ecuaciones de movimiento similares al movimiento parabólico en gravedad, pero con fuerzas eléctricas.</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Chispa eléctrica o relámpago</summary>
+        <p>Se muestra una fotografía de un rayo asociado a un campo eléctrico intenso en la atmósfera.</p>
+      </details>
+      <details>
+        <summary>Campo entre placas paralelas</summary>
+        <p>Utilizado para producir un campo eléctrico uniforme, que se emplea en diversos dispositivos electrónicos</p>
+      </details>
+      <h3>Campo eléctrico de una distribución continua</h3>
+      <p>Para distribuciones extensas de carga, se divide en pequeños elementos y se integra:</p>
+      <div>\[\vec{E} = K_e \int \frac{dq}{r^2} \hat{r}\]</div>
+      <p>Según la forma se usa densidad lineal (λ), superficial (σ) o volumétrico (ρ)</p>
+      <h3>Líneas de campo eléctrico</h3>
+      <p>Son representaciones gráficas del campo. Salen de cargas positivas y entran a las negativas. Nunca se cruzan y su densidad indica la intensidad del campo. Ayudan a visualizar el comportamiento del campo en el espacio.</p>
+      <h3>Movimiento de partículas cargadas en un campo uniforme</h3>
+      <p>Una partícula con carga <i>q</i> en un campo uniforme <i>E</i> sufre una aceleración constante:</p>
+      <div>\[\vec{F} = q \vec{E} \quad \Rightarrow \quad a = \frac{q \vec{E}}{m}\]</div>
+      <p>Su movimiento es rectilíneo uniformemente acelerado. Este modelo es clave para analizar partículas en aceleradores o dispositivos electrónicos.</p>
+      <p>En la sección de <a href="simulaciones.html#campo-electrico">Simulaciones</a> encontrarás actividades interactivas.</p>
+      <a href="electricidad.html#temario-electricidad">👆</a>
+      <br><br>
+      <hr>
+    </section>
+
+    <section id="seccion-2">
+      <h2>Ley de Gauss</h2>
+      <h3>¿Qué es la ley de Gauss?</h3>
+      <p>La Ley de Gauss es una herramienta importante que permite calcular el campo eléctrico generado por distribuciones de carga, especialmente cuando hay simetría (esférica, cilíndrica o planar). Se basa en el concepto de flujo eléctrico y se deriva de la Ley de Coulomb, pero simplifica cálculos complejos usando superficies cerradas.</p>
+      <h4>Aplicaciones:</h4>
+      <details>
+        <summary>Jaula de Faraday</summary>
+        <p>Una jaula de Faraday es una estructura metálica (como un coche, un avión, o un cuarto blindado) que protege su interior de campos eléctricos externos.</p>
+        <p>Esto se basa directamente en la Ley de Gauss:
+        En un conductor en equilibrio electrostático, el campo eléctrico en su interior es cero, sin importar cómo varíe el campo fuera del conductor.
+        ¿Por qué sucede esto?</p>
+        <ul>
+          <li>La Ley de Gauss establece que el flujo eléctrico neto a través de una superficie cerrada depende solamente de la carga neta encerrada.</li>
+          <li>En un conductor, las cargas libres se redistribuyen sobre la superficie exterior, anulando cualquier campo en el interior.</li>
+          <li>Por eso, los equipos electrónicos sensibles o personas dentro de una jaula metálica están protegidos de descargas o interferencias electromagnéticas.</li>
+        </ul>
+      </details>
+      <h3>Flujo eléctrico</h3>
+      <p>El flujo eléctrico Φ<sub>E</sub> es una medida de cuántas líneas de campo eléctrico atraviesan una superficie. Si el campo es uniforme y perpendicular a una superficie plana de área <i>A</i>, se define como:</p>
+      <div>\[\Phi_E = E \cdot A\]</div>
+      <p>Si hay un ángulo θ entre el campo y la normal a la superficie:</p>
+      <div>\[\Phi_E = E \cdot A \cdot \cos(\theta)\]</div>
+      <p>El flujo <b>no mide el campo en sí</b>, sino cuánto campo atraviesa una <b>superficie dada.</b></p>
+      <h3>Enunciado de la Ley de Gauss</h3>
+      <p>La Ley de Gauss dice que el flujo eléctrico neto a través de cualquier superficie cerrada es igual a la carga neta encerrada dividida por la constante de permitividad del vacío <i>(E0)</i></p>
+      <div>\[\Phi_E = \vec{E} \cdot d\vec{A} = \frac{q_{in}}{\varepsilon_0}\]</div>
+      <p>Esta ecuación permite encontrar el campo eléctrico <b>si se elige bien la superficie gaussiana,</b> lo cual es posible solo en <b>distribuciones simétrica</b></p>
+      <p><b>Aplicaciones</b></p>
+      <p>La ley se usa para hallar campos en tres casos comunes:</p>
+      <ul>
+        <li><b>Simetría esférica:</b> cargas distribuidas en esferas o cargas puntuales.</li>
+        <li><b>Simetría cilíndrica:</b> hilos largos con carga uniforme.</li>
+        <li><b>Simetría plana:</b> planos infinitos cargados.</li>
+      </ul>
+      <p>Al elegir una <b>superficie gaussiana</b> adaptada a la simetría, el cálculo del campo se simplifica muchísimo</p>
+      <h3>Conductores en equilibrio electrostático</h3>
+      <p>Un conductor en equilibrio electrostático.es aquel en el que no hay movimiento neto de cargas eléctricas dentro del mismo. En estas condiciones, el campo eléctrico en el interior del conductor es nulo, y cualquier exceso de carga se distribuye en la superficie.</p>
+      <p>Propiedades claves:</p>
+      <ul>
+        <li>El campo eléctrico dentro del conductor es cero.</li>
+        <li>Toda la carga reside en la superficie externa.</li>
+        <li>El campo fuera del conductor es perpendicular a la superficie y de magnitud:</li>
+        <div>\[ E = \frac{\sigma}{\varepsilon_0} \]</div>
+        <p>Donde  σ es la densidad de carga superficial</p>
+      </ul>
+      <p>En la sección de <a href="simulaciones.html#ley-gauss">Simulaciones</a> encontrarás actividades interactivas.</p>
+      <a href="electricidad.html#temario-electricidad">👆</a>
+      <br><br>
+      <hr>
+    </section>
+
+    <section id="seccion-3">
+      <h2>Potencial eléctrico</h2>
+      <p>El potencial eléctrico <i>(V)</i> es una cantidad escalar que representa la energía potencial por unidad de carga. Es una forma conveniente de describir los efectos del campo eléctrico sin trabajar directamente con fuerzas vectoriales. Su unidad es el voltio <i>(V)</i>, equivalente a joule por coulomb <i>(J/C)</i>.</p>
+      <h4>Aplicaciones:</h4>
+      <details>
+        <summary>Precipitador electrostático</summary>
+        <p>Este aparato se utiliza en plantas eléctricas que consumen carbón y en industrias que generan mucho humo. Su principio de funcionamiento se basa en una alta diferencia de potencial (entre 40 y 100 kV) mantenida entre un alambre central y las paredes de un ducto que están conectadas a tierra. Gracias a esta diferencia de potencial:</p>
+        <ul>
+          <li>Se genera un campo eléctrico intenso entre el alambre y las paredes.</li>
+          <li>Este campo acelera iones negativos y electrones que se adhieren a las partículas de polvo suspendidas en el aire.</li>
+          <li>Las partículas cargadas se mueven hacia las paredes del ducto y se adhieren, eliminándolas del flujo de aire.</li>
+        </ul>
+        <p>Este proceso permite capturar hasta el 99% de las partículas contaminantes antes de que lleguen a la atmósfera</p>
+      </details>
+      <details>
+        <summary>Generador Van de Graaff</summary>
+        <p>Puede alcanzar potenciales de hasta 20 millones de volts y se usa para:</p>
+        <ul>
+          <li>Investigar reacciones nucleares.</li>
+          <li>Ilustrar visualmente la acumulación de carga (como cuando el cabello se eriza).</li>
+          <li>Mostrar el potencial eléctrico mediante la elevación de una esfera conductora</li>
+        </ul>
+      </details>
+      <h3>Diferencia de potencia</h3>
+      <p>Es el trabajo necesario para mover una carga de un punto a otro dentro de un campo eléctrico. Se relaciona con la energía potencial mediante:</p>
+      <div>\[ \Delta V = \frac{\Delta U}{q_0} \]</div>
+      <p>y en campo uniforme:</p>
+      <div>\[ \Delta V = -E \cdot d \]</div>
+      <h3>Potencial de una carga puntual</h3>
+      <p>El potencial generado por una carga <i>q</i> en un punto a distancia <i>r</i> es:</p>
+      <div>\[ V = k_e \cdot \frac{q}{r} \]</div>
+      <p>Si hay varias cargas, los potenciales se <b>suman algebraicamente</b> porque <i>V</i> es escalar</p>
+      <h3>Relación entre campo eléctrico y potencial</h3>
+      <p>El campo eléctrico es la fuerza por unidad de carga que experimenta una carga en un punto determinado, mientras que el potencial eléctrico es la energía potencial por unidad de carga en ese mismo punto.</p>
+      <p>El campo eléctrico es el gradiente negativo del potencial:</p>
+      <div>\[ \vec{E} = -\nabla V \Rightarrow E_x = -\frac{dV}{dx} \]</div>
+      <p>Esto permite hallar el campo si se conoce el potencial como función de la posición.</p>
+      <h3>Distribuciones continuas de carga</h3>
+      <p>Describe la concentración de carga eléctrica en un objeto macroscópico, donde la carga se distribuye de manera continua sobre un área, volumen o línea. En lugar de tratar cargas individuales, considere la densidad de carga, que es la cantidad de carga por unidad de longitud (lineal), área (superficial) o volumen.</p>
+      <p>Para distribuciones extensas, se usa integración para calcular el potencial:</p>
+      <div>\[ V = k_e \int \frac{dq}{r} \]</div>
+      <p>Donde <i>dq</i> es un elemento de carga y <i>r</i> es la distancia al punto donde se mide el potencial.</p>
+      <h3>Conductores en equilibrio</h3>
+      <p>En un conductor cargado en equilibrio:</p>
+      <ul>
+        <li>El potencial eléctrico es constante en toda su superficie.</li>
+        <li>El campo eléctrico dentro del conductor es cero.</li>
+        <li>Toda la carga reside en la superficie.</li>
+      </ul>
+      <p>En la sección de <a href="simulaciones.html#potencial-electrico">Simulaciones</a> encontrarás actividades interactivas.</p>
+      <a href="electricidad.html#temario-electricidad">👆</a>
+      <br><br>
+      <hr>
+    </section>
+
+    <section id="seccion-4">
+      <h2>Capacitancia y materiales</h2>
+      <p>La capacitancia <i>C</i> es la capacidad de un dispositivo llamado capacitor para almacenar carga eléctrica por unidad de diferencia de potencial:</p>
+      <div></div>
+      <p>La unidad en el SI es el <b>faradio <i>(f)</i>.</b> Un capacitor típico está formado por <b>dos placas conductoras</b> separadas por un material aislante (dieléctrico). La capacitancia depende de la geometría del sistema y del medio entre las placas, no de la carga ni del voltaje externo.</p>
+      <h4>Aplicaciones:</h4>
+      <details>
+        <summary>Desfibrilador</summary>
+        <p>Un desfibrilador es un dispositivo médico que almacena energía en capacitores grandes y la libera rápidamente en forma de un pulso eléctrico para restaurar el ritmo cardíaco de una persona.</p>
+        <ul>
+          <li>Los capacitores dentro del desfibrilador se cargan lentamente a través de una batería.</li>
+          <li>Una vez cargados, pueden descargar su energía en milisegundos, generando una corriente lo suficientemente grande como para estimular el corazón.</li>
+          <li>Este uso depende de la capacidad del capacitor para almacenar mucha energía, la cual se calcula con la fórmula:</li>
+          <div>\( U = \frac{1}{2} C V^2 \)</div>
+          <p>Donde <i>C</i> es la capacitancia y <i>V</i> el voltaje aplicado </p>
+        </ul>
+      </details>
+      <h3>Cálculo de capacitancia</h3>
+      <p>Se estudian distintos tipos de capacitores:</p>
+      <ul>
+        <li><b>Placas paralelas:</b><div>\[ C = \varepsilon_0 \frac{A}{d} \]</div></li>
+        <li><b>Esférico y cilíndrico:</b> tienen fórmulas específicas según sus dimensiones.</li>
+      </ul>
+      <p>Estos cálculos asumen vacío entre las placas, aunque luego se incluyen <b>materiales dieléctricos</b></p>
+      <h3>Combinaciones de capacitores</h3>
+      <p>Los capacitores se pueden conectar:</p>
+      <ul>
+        <li>En paralelo <div>\[ C_{\text{eq}} = C_1 + C_2 + \cdots \]</div></li>
+        <li>En serie <div>\[ \frac{1}{C_{\text{eq}}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots \]</div></li>
+      </ul>
+      <p>Esto permite simplificar circuitos con múltiples capacitores</p>
+      <h3>Materiales dieléctricos</h3>
+      <p>Insertar un dieléctrico (aislante) entre las placas aumenta la capacitancia: Donde k es la constante dieléctrica del material. El dieléctrico también evita descargas eléctricas y permite aplicar voltajes mayores sin cortocircuito</p>
+      <div>\[ C = k \varepsilon \frac{A}{d} \]</div>
+      <h3>Dipolos y materiales dieléctricos</h3>
+      <p>Un dipolo eléctrico se alinea con un campo eléctrico. En los materiales dieléctricos, las moléculas se comportan como dipolos inducidos o permanentes. Esto explica por qué un dieléctrico modifica el campo dentro del capacitor y aumenta la capacitancia.</p>
+      <a href="electricidad.html#temario-electricidad">👆</a>
+      <br><br>
+      <hr>
+    </section>
+
+    <section id="seccion-5">
+      <h2>Corriente y Resistencia</h2>
+      <h3>¿Qué es la corriente eléctrica?</h3>
+      <p>Es el flujo de carga eléctrica a través de un conductor, definida como:</p>
+      <div>\[ I = \frac{dQ}{dt} \]</div>
+      <p>Donde <i>I</i> es la corriente, <i>Q</i> la carga y <i>t</i> el tiempo. Su unidad en el SI es el ampere <i>(A)</i>, equivalente a 1 coulomb por segundo. La corriente puede ser continua <i>(DC)</i> o alterna <i>(AC)</i>, y puede estar dentro o fuera de un conductor (como en un haz de electrones).</p>
+      <h4>Aplicaciones:</h4>
+      <details>
+        <summary>Lámparas de mano</summary>
+        <p>Cuando se presiona el interruptor, una batería genera corriente que fluye por el filamento, haciéndolo brillar. Este ejemplo muestra cómo la corriente eléctrica produce energía luminosa y térmica.</p>
+      </details>
+      <details>
+        <summary>Electrodomésticos</summary>
+        <p>El paso de corriente a través de resistencias internas permite el funcionamiento de aparatos como calentadores, planchas o tostadoras.</p>
+      </details>
+      <details>
+        <summary>Cinescopios</summary>
+        <p>En los televisores antiguos, un haz de electrones (corriente) produce imágenes en la pantalla, demostrando que también puede haber corriente fuera de un conductor.</p>
+      </details>
+      <h3>Resistencia electica</h3>
+      <p>La resistencia <i>R</i> es la oposición al paso de la corriente en un material, definida por:</p>
+      <div>\[ R = \frac{\Delta V}{I} \]</div>
+      <p>Donde <i>ΔV</i>  es la diferencia de potencial. Su unidad es el ohmio (Ω). Depende de la longitud, el área transversal y la resistividad (ρ) del material:</p>
+      <div>\[ R = \rho \frac{L}{A} \]</div>
+      <h3>Modelo de conducción eléctrica</h3>
+      <p>Describe cómo los electrones libres en un conductor se mueven bajo la influencia de un campo eléctrico, con una velocidad de arrastre <i>Vd</i>. Aunque las colisiones con los átomos impiden el movimiento libre, los electrones avanzan lentamente en promedio. El modelo clásico asocia corriente con:</p>
+      <div>\[ I = nqv_d A \]</div>
+      <p>Donde <i>n</i> es la densidad de portadores, <i>q</i> su carga, y <i>A</i> el área de sección.</p>
+      <h3>Relación con la temperatura</h3>
+      <p>La resistencia varía con la temperatura. En metales, suele aumentar linealmente:</p>
+      <div>\[ \rho = \rho_0 [1 + \alpha (T - T_0)] \]</div>
+      <p>Donde α es el coeficiente de temperatura de resistividad. Este fenómeno se debe al aumento de colisiones entre electrones y átomos al elevarse la temperatura.</p>
+      <h3>Superconductores</h3>
+      <p>Son materiales que pierden toda resistencia al ser enfriados por debajo de una temperatura crítica. Esto permite que la corriente fluya indefinidamente sin disipar energía. Son usados en aplicaciones como imanes potentes, trenes de levitación magnética y MRI.</p>
+      <h3>Potencia eléctrica</h3>
+      <p>La potencia disipada o entregada en un circuito es:</p>
+      <div>\[ P = I \Delta V = I^2 R = \frac{(\Delta V)^2}{R} \]</div>
+      <p>Representa la energía por unidad de tiempo suministrada a un dispositivo, como un foco o una resistencia. Se mide en watts <i>(W)</i>.</p>
+      <p>En la sección de <a href="simulaciones.html#corriente-resistencia">Simulaciones</a> encontrarás actividades interactivas.</p>
+      <a href="electricidad.html#temario-electricidad">👆</a>
+      <br><br>
+      <hr>
+    </section>
+
+    <section id="seccion-6">
+      <h2>Corriente directa</h2>
+      <h3>¿Qué es un circuito de corriente directa (CD)?</h3>
+      <p>Un circuito de corriente directa es aquel en el que la corriente fluye en una sola dirección constante. Se compone típicamente de una fuente de energía (batería), resistores, capacitores y conductores. La corriente se mantiene constante en magnitud y dirección, a diferencia de la corriente alterna que varía periódicamente.</p>
+      <h4>Aplicaciones:</h4>
+      <details>
+        <summary>Baterías en aparatos portátiles</summary>
+        <p>Teléfonos, cámaras digitales y reproductores MP3 utilizan circuitos de corriente directa con baterías como fuente de voltaje constante.</p>
+      </details>
+      <details>
+        <summary>Cableado doméstico</summary>
+        <p>El análisis de instalaciones eléctricas en el hogar incluye resistores en serie/paralelo, medidores y dispositivos de protección como fusibles.</p>
+      </details>
+      <details>
+        <summary>Medidores eléctricos</summary>
+        <p>Se aplican para medir corriente y voltaje en instalaciones domésticas o en laboratorios, permitiendo verificar la seguridad de los circuitos.</p>
+      </details>
+      <h3>Fuerza Electromotriz (fem)</h3>
+      <p>La fuerza electromotriz (fem) no es una fuerza real, sino una diferencia de potencial proporcionada por una batería o fuente. La fem ideal representa el voltaje máximo entre terminales. En una batería real, se incluye una resistencia interna, y la diferencia de potencial real se reduce a:</p>
+      <div>\[ V = \mathcal{E} - Ir \]</div>
+      <p></p>
+      <h3>Resistores en serie y paralelo</h3>
+      <ul>
+        <li><b>En serie:</b> misma corriente, voltajes se suman: <div>\[ R_{\text{eq}} = R_1 + R_2 + \cdots \]</div></li>
+        <li><b>En paralelo:</b> misma diferencia de potencial, corrientes se dividen: <div>\[ \frac{1}{R_{\text{eq}}} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots \]</div></li>
+      </ul>
+      <p>Estas combinaciones simplifican el análisis de circuitos complejos</p>
+      <h3>Leyes de Kirchhoff</h3>
+      <p>Las leyes de Kirchhoff​ son dos igualdades que se basan en la conservación de la energía y la carga en los circuitos eléctricos.</p>
+      <p>Dos leyes fundamentales para resolver circuitos:</p>
+      <ol>
+        <li><b>Ley de corrientes (nodos):</b> Establece que la suma de las corrientes que entran a un nodo en un circuito eléctrico es igual a la suma de las corrientes que salen de ese nodo.</li>
+        <li><b>Ley de voltajes (lazos):</b> Establece que la suma algebraica de las diferencias de potencial en un lazo cerrado de un circuito eléctrico es igual a cero.</li>
+      </ol>
+      <p>Son aplicables incluso en circuitos con múltiples fuentes y ramas.</p>
+      <h3>Circuitos RC <small>(resistor-capacitor)</small></h3>
+      <p>Cuando un capacitor se carga o descarga a través de un resistor, la carga y corriente varían con el tiempo:</p>
+      <div>\[ q(t) = Q\left(1 - e^{-t/RC} \right) \]</div>
+      <div>\[ I(t) = \frac{V}{R} e^{-t/RC} \]</div>
+      <p>Donde <i>RC</i> es la <b>constante de tiempo</b> del circuito. Este tipo de circuito es base para temporizadores y filtros eléctricos</p>
+      <h3>Medidores eléctricos</h3>
+      <p>Incluye dispositivos como el <b>voltímetro</b> (mide diferencia de potencial) y el <b>amperímetro</b> (mide corriente). Se explican sus conexiones correctas:</p>
+      <ul>
+        <li>Amperímetro: En serie.</li>
+        <li>Voltímetro: En paralelo.</li>
+      </ul>
+      <h3>Cableado doméstico y seguridad</h3>
+      <p>Describe el <b>sistema eléctrico residencial</b>, que incluye:</p>
+      <ul>
+        <li>Conexiones en paralelo para mantener un voltaje constante.</li>
+        <li>Fusibles o cortacircuitos para protección.</li>
+        <li>Toma de tierra y uso de interruptores de falla a tierra <i>(GFI)</i> para evitar descargas peligrosas.</li>
+      </ul>
+      <a href="electricidad.html#temario-electricidad">👆</a>
+    </section>
+  </main>
+  <br>
+
+<div id="faqModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>❓ Preguntas Frecuentes</h2>
+    <details>
+      <summary>¿Qué es la electricidad?</summary>
+      <p>Es el conjunto de fenómenos relacionados con la presencia y movimiento de cargas eléctricas.</p>
+    </details>
+    <details>
+      <summary>¿Qué es el magnetismo?</summary>
+      <p>Es un fenómeno físico por el cual ciertos materiales ejercen fuerzas de atracción o repulsión.</p>
+    </details>
+    <details>
+      <summary>¿Dónde puedo hacer simulaciones?</summary>
+      <p>En la sección de <a href="simulaciones.html">Simulaciones</a> encontrarás actividades interactivas.</p>
+    </details>
+  </div>
+</div>
+
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>ElectroMag Academy</h3>
+      <p>Aprende sobre electricidad y magnetismo</p>
+      <p>Simulaciones de forma clara y didáctica</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Enlaces útiles</h4>
+      <ul>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="electricidad.html">Electricidad</a></li>
+        <li><a href="magnetismo.html">Magnetismo</a></li>
+        <li><a href="simulaciones.html">Simulaciones</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <p>Email: contacto@gmail.com</p>
+      <p>© 2025 ElectroMag Academy. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

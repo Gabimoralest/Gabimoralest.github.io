@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnetismo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/teoria.css">
+    <script defer src="../js/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header id="main-header">
+    <div class="container">
+      <div class="logo">
+        <img src="../assets/logo.jfif" alt="ElectroMag Academy" />
+      </div>
+      <nav class="nav-menu">
+        <a href="home.html">Inicio</a>
+        <a href="electricidad.html">Electricidad</a>
+        <a href="magnetismo.html">Magnetismo</a>
+        <a href="simulaciones.html">Simulaciones</a>
+        <a href="recursos.html">Recursos</a>
+        <span class="icon">🌙</span>
+        <span class="icon faq-toggle" title="Preguntas frecuentes">❓</span>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article>
+      <h1 id="temario-magnetismo">Teoría de Magnetismo</h1>
+      <h2>Temario</h2>
+      <ul>
+        <li><a href="magnetismo.html#seccion-1">¿Que es un campo mágnetico?</a></li>
+        <li><a href="magnetismo.html#seccion-2">Campos y fuerzas mágneticas</a></li>
+        <li><a href="magnetismo.html#seccion-3">Fuentes del campo magnético</a></li>
+        <li><a href="magnetismo.html#seccion-4">Inductancia</a></li>
+        <li><a href="magnetismo.html#seccion-5">Circuitos de corriente alterna <small>(CA)</small></a></li>
+        <li><a href="magnetismo.html#seccion-6">Ondas Electromagnéticas</a></li>
+        <li><a href="magnetismo.html#seccion-7">Corriente de Desplazamiento</a></li>
+      </ul>
+      <hr>
+    </article>
+     <section id="seccion-1">
+      <h2>¿Qué es un campo magnético?</h2>
+      <p>El campo magnético es una región del espacio donde una carga eléctrica en movimiento experimenta una fuerza. Este campo, representado por el símbolo \( \vec{B} \), es fundamental para entender fenómenos eléctricos y magnéticos como el funcionamiento de motores, generadores, transformadores y otros dispositivos electromagnéticos.
+      Los campos magnéticos pueden generarse por:</p>
+      <ul>
+        <li><b>Imanes permanentes,</b> como los que se encuentran en la naturaleza o en objetos cotidianos</li>
+        <li><b>Corrientes eléctricas,</b> que producen campos circulares a su alrededor.</li>
+      </ul>
+      <p>Una de las primeras evidencias de la relación entre electricidad y magnetismo fue observada por Hans Christian Oersted en 1820, cuando descubrió que una corriente eléctrica desviaba la aguja de una brújula. Esto marcó el inicio del estudio del electromagnetismo, que luego fue unificado por Maxwell en un marco teórico general.
+        Algunas propiedades clave del campo magnético:
+      </p>
+      <ul>
+        <li>Es una <b>magnitud vectorial</b></li>
+        <li>Se representa mediante <b>líneas de campo</b> que van del polo norte al sur fuera del imán</li>
+        <li>No existen <b>monopolos magnéticos</b> (los polos siempre vienen en pares)</li>
+        <li>La dirección del campo en un punto se identifica con <b>la orientación de una brújula</b> colocada en ese lugar</li>
+      </ul>
+      <h4>Aplicaciones:</h4>
+      <details>
+        <summary>Brújula</summary>
+        <p>Una de las aplicaciones más antiguas y simples de los campos magnéticos es la brújula.Funciona gracias a que la Tierra genera un campo magnético natural, como si fuera un gran imán. La aguja de la brújula, que es un pequeño imán, se alinea con ese campo y apunta al norte magnético.</p>
+        <p>Esto nos permite orientarnos, y demuestra cómo un campo magnético puede influir en materiales magnéticos a distancia, aunque no podamos verlo. La aguja de la brújula se alinea con las líneas del campo magnético. Si acercas un imán a la brújula, la aguja cambia de dirección porque el campo del imán interfiere con el campo de la Tierra.</p>
+      </details>
+      <details>
+        <summary>Toma de huellas dactilares</summary>
+        <p>La aplicación de polvo magnético y su recolección con brochas magnéticas facilita revelar huellas en superficies donde otros métodos fallan.</p>
+      </details>
+      <details>
+        <summary>Cañón de riel</summary>
+        <p>Utiliza la fuerza magnética entre rieles conductores para lanzar proyectiles a velocidades extremas, con aplicaciones en defensa y espacio.</p>
+      </details>
+      <a href="magnetismo.html#temario-magnetismo">👆</a>
+      <br><br>
+      <hr>
+    </section>
+    <section id="seccion-2">
+      <h2>Campos y fuerzas mágneticas</h2>
+      <h3>¿Que es?</h3>
+      <p>Un campo magnético es una región del espacio donde una carga en movimiento o un material magnético experimenta una fuerza. Este campo es producido por:</p>
+      <ul>
+        <li><b>Corrientes eléctricas,</b> es decir, cargas en movimiento</li>
+        <li><b>Imanes permanentes,</b> como una barra imantada</li>
+      </ul>
+      <p>Se representa mediante el vector \( \vec{B} \), cuya dirección se determina observando la orientación que adopta una aguja de brújula colocada en dicho punto. Las líneas de campo magnético representan gráficamente cómo se extiende y orienta este campo.
+      </p>
+      <p><b>Ejemplo:</b></p>
+      <p><b>Visualización del campo magnético con limaduras de hierro</b></p>
+      <p>Colocas una hoja de papel sobre un imán de barra y esparces limaduras de hierro por encima. Las limaduras se alinean según las líneas de campo magnético, revelando el patrón del campo:</p>
+      <ul>
+        <li>Entre polos opuestos (N-S), las líneas son densas y van de un polo al otro</li>
+        <li>Entre dos polos iguales (N-N o S-S), las líneas se desvían y se repelen</li>
+        <li>El patrón observado te ayuda a deducir <b>la intensidad y dirección del campo</b></li>
+      </ul>
+      <a href="magnetismo.html#temario-magnetismo">👆</a>
+      <br><br>
+      <hr>
+    </section>
+
+    <section id="seccion-3">
+      <h2>Fuentes del Campo Magnético</h2>
+      <p>Explora el origen del campo magnético, que surge por cargas en movimiento. Se explican diversas leyes físicas que permiten calcular y entender los campos magnéticos generados por corrientes eléctricas, así como su comportamiento en diferentes configuraciones.</p>
+      <h3>Ley de Biot-Savart</h3>
+      <p>La Ley de Biot-Savart describe el campo magnético generado por un pequeño segmento de corriente. Es análoga a la ley de Coulomb para campos eléctricos, pero involucra cargas en movimiento (corrientes).</p>
+      <p>Su formula general es:</p>
+      <div>\( d\vec{B} = \frac{\mu_0}{4\pi} \cdot \frac{I \, d\vec{s} \times \hat{r}}{r^2} \)</div>
+      <br>
+      <p>Donde \(\mu_0\) es una constante llamada permeabilidad del espacio libre</p>
+      <p><b>Ejemplo:</b></p>
+      <p>Campo magnético en el centro de una espira circular de radio <i>R</i> que transporta corriente <i>I</i></p>
+      <p>Aplicando Biot-Savart y considerando la simetría:</p>
+      <div>\( B = \frac{\mu_0}{2R} \)</div>
+      <br>
+      <ul>
+        <li>El campo es perpendicular al plano de la espira</li>
+        <li>Todas las contribuciones de los segmentos de corriente suman en la misma dirección en el centro</li>
+      </ul>
+      <h4>Aplicaciones:</h4>
+      <details>
+        <summary>Selenoides</summary>
+        <p>Alambres enrollados por los que pasa corriente generan campos magnéticos similares al de un imán, utilizados en motores, timbres y cerraduras electromagnéticas.</p>
+      </details>
+      <details>
+        <summary>Bobinas de Helmholtz</summary>
+        <p>Usadas en laboratorios para generar campos magnéticos uniformes, ideales para calibración de sensores y experimentos de precisión.</p>
+      </details>
+      <details>
+        <summary>Magnetismo en la materia</summary>
+        <p>Explica cómo materiales como el hierro pueden imantarse, base de dispositivos como transformadores, memorias magnéticas y discos duros.</p>
+      </details>
+      <h3>Ley de Faraday</h3>
+      <p>La Ley de Faraday de la inducción electromagnética es uno de los principios más fundamentales del electromagnetismo. Formulada por Michael Faraday en 1831, esta ley explica cómo un campo magnético variable puede generar una fuerza electromotriz (fem) y, por lo tanto, una corriente eléctrica en un circuito conductor.</p>
+      <p>A diferencia de los circuitos tradicionales alimentados por baterías, en este caso la corriente no necesita una fuente de voltaje externa, sino que se origina únicamente por la variación del flujo magnético que atraviesa una espira o conjunto de espiras. Este fenómeno es la base de dispositivos esenciales como generadores eléctricos, transformadores, motores eléctricos y placas de inducción.</p>
+      <p>Desde un punto de vista práctico, la ley de Faraday representa la interconexión dinámica entre electricidad y magnetismo, revelando que un campo magnético cambiante crea un campo eléctrico, lo cual fue una pieza clave para el desarrollo posterior de las ecuaciones de Maxwell y la comprensión de las ondas electromagnéticas.</p>
+      <p>Esta ley también lleva implícita la ley de Lenz, que introduce una orientación opuesta en la corriente inducida, en consonancia con la conservación de la energía.</p>
+      <p>En la sección de <a href="simulaciones.html#ley-faraday">Simulaciones</a> encontrarás actividades interactivas.</p>
+      <h3>Ley de inducción de Faraday</h3>
+      <p>La Ley de Faraday de la inducción electromagnética establece que una fuerza electromotriz (fem) es inducida en un circuito cuando cambia el flujo magnético a través de él. Este fenómeno genera una corriente eléctrica incluso sin una batería, siempre que el campo magnético varíe en el tiempo.</p>
+      <p>Su fórmula matemética es:</p>
+      <div>\( \mathcal{E} = -\frac{d\Phi_B}{dt} \)</div>
+      <br>
+      <p>El signo negativo refleja la ley de Lenz, que dice que la corriente inducida siempre se opone al cambio que la produce.</p>
+      <p><b>Ejemplo básico:</b></p>
+      <p>Una espira circular en un campo magnético que aumenta en el tiempo:</p>
+      <ul>
+        <li>Supongamos que una espira de área constante <i>A</i> en un campo <i>B(t)</i> que aumenta linealmente, entonces:</li>
+        <div>\[\varepsilon = -A \cdot \frac{dB}{dt}\]</div>
+        <li>Si \( \frac{dB}{dt} \) es positivo (el campo crece), la fem es negativa →  la corriente inducida se genera en sentido contrario al que aumentaría el flujo.</li>
+      </ul>
+      <a href="magnetismo.html#temario-magnetismo">👆</a>
+      <br><br>
+      <hr>
+    </section>
+
+    <section id="seccion-4">
+      <h2>Inductancia</h2>
+      <p>La inductancia es una propiedad fundamental de los circuitos eléctricos que relaciona el cambio de corriente con la generación de una fuerza electromotriz (fem) inducida. Esta propiedad se manifiesta en componentes llamados inductores, como bobinas o solenoides, que se oponen a cambios en la corriente eléctrica que fluye a través de ellos.</p>
+      <p>Así como un capacitor almacena energía en forma de campo eléctrico, un inductor almacena energía en su campo magnético. Cada vez que la corriente cambia, el campo magnético asociado también lo hace, y según la ley de Faraday, esto genera una fem inducida que se opone al cambio, fenómeno conocido como autoinducción.</p>
+      <p>La unidad de inductancia en el Sistema Internacional es el henry (H), y su magnitud depende de la geometría del inductor, el número de vueltas, y la permeabilidad del medio donde se encuentra.</p>
+      <h3>Autoinducción e inductancia</h3>
+      <p>La autoinducción ocurre cuando la corriente en un circuito varía y, como consecuencia, el propio circuito genera una fem autoinducida que se opone al cambio. Este efecto está descrito por la ley de Faraday aplicada al propio circuito.</p>
+      <p>Fórmula principal:</p>
+      <div>\( \varepsilon_L = -L \frac{dI}{dt} \)</div>
+      <br>
+      <p>El signo negativo refleja que la fem se opone al cambio de corriente (Ley de Lenz)</p>
+      <p><b>Ejemplo</b></p>
+      <p>Solenoide de núcleo de aire con N vueltas, longitud <i>l</i> y área <i>A</i></p>
+      <p>La inductancia de este solenoide es:</p>
+      <div>\( L = \mu_0 \cdot \frac{N^2}{l} \)</</div>
+      <br>
+      <p>Donde:</p>
+      <ul>
+        <li>\(\mu_0\) : permeabilidad del vacío</li>
+        <li>\(N\) : número de vueltas</li>
+        <li>\(A\) : área de la sección transversal.</li>
+        <li>\(l\) : longitud del solenoide.</li>
+      </ul>
+      <a href="magnetismo.html#temario-magnetismo">👆</a>
+      <br><br>
+      <hr>
+    </section>
+
+    <section id="seccion-5">
+      <h2>Circuitos de corriente alterna <small>(CA)</small></h2>
+      <p>La corriente alterna (CA) es el tipo de electricidad que se utiliza en la mayoría de los hogares y dispositivos electrónicos. A diferencia de la corriente directa (CD), donde el flujo de electrones va en una sola dirección, la corriente alterna cambia periódicamente de dirección, normalmente en forma senoidal.</p>
+      <p>Este tipo de corriente es ideal para la transmisión eficiente de energía eléctrica a grandes distancias, y por eso es usada en la red eléctrica. En física, su estudio implica el análisis de circuitos que contienen resistores, inductores y capacitores, donde se observa cómo la corriente y el voltaje se comportan en función del tiempo y la frecuencia.</p>
+      <p>Los circuitos de CA pueden ser simples, como un resistor conectado a una fuente senoidal, o complejos, como un circuito RLC en serie o paralelo. También se abordan fenómenos como la resonancia, el uso de transformadores, y la potencia promedio suministrada en estos sistemas.</p>
+      <h3>Fuentes de corriente alterna <small>(CA)</small></h3>
+      <p>Una fuente de corriente alterna es un dispositivo que proporciona una tensión eléctrica variable en el tiempo, generalmente de forma senoidal. Su expresión típica es:</p>
+      <div>\[\Delta v = \Delta V_{\text{máx}}\, \text{sen}(\omega t)\]</div>
+      <p>En muchos países, la frecuencia estándar es de <b>50 Hz o 60 Hz</b>, lo que significa que el voltaje cambia de dirección <b>60 veces por segundo.</b></p>
+      <p><b>Ejemplo:</b></p>
+      <p>Cuando conectas un televisor o una licuadora a un tomacorriente, estás usando una fuente de CA doméstica. En Colombia, esta tiene típicamente:</p>
+      <ul>
+        <li>Voltaje eficaz (rms): 110 v</li>
+        <li>Frecuencia: 60 Hz</li>
+      </ul>
+      <p>Esto quiere decir que el voltaje real cambia entre +155V y -155V aproximadamente, pero el calor eficaz se mantiene en 110V, ya que produce el mismo efecto térmico que una fuente de CD de 110V.</p>
+      <a href="magnetismo.html#temario-magnetismo">👆</a>
+      <br><br>
+      <hr>
+    </section>
+
+    <section id="seccion-6">
+      <h2>Ondas Electromagnéticas</h2>
+      <p>Las ondas electromagnéticas son un tipo de onda que no necesita un medio material para propagarse, a diferencia de las ondas mecánicas como el sonido o las olas del agua. Estas ondas están formadas por campos eléctricos y magnéticos oscilantes, que se generan mutuamente y se propagan juntos a través del espacio.</p>
+      <p>La existencia de estas ondas fue predicha teóricamente por James Clerk Maxwell en el siglo <i>XIX</i> mediante un sistema de ecuaciones fundamentales del electromagnetismo, conocidas como las Ecuaciones de Maxwell. Más tarde, Heinrich Hertz confirmó experimentalmente su existencia en 1887.</p>
+      <p>Una característica esencial de estas ondas es que se propagan a la velocidad de la luz, lo cual llevó a la conclusión de que la luz es una forma de onda electromagnética. Este descubrimiento abrió la puerta a numerosas aplicaciones tecnológicas como la radio, televisión, microondas, comunicaciones satelitales, y rayos <i>X</i>, entre otros.</p>
+      <a href="magnetismo.html#temario-magnetismo">👆</a>
+      <br><br>
+      <hr>
+    </section>
+
+    <section id="seccion-7">
+      <h2>Corriente de Desplazamiento</h2>
+      <h3>¿Qué es la corriente de desplazamiento?</h3>
+      <p>La corriente de desplazamiento fue introducida por James Clerk Maxwell para resolver una inconsistencia en la ley de Ampère. Esta ley decía que un campo magnético se genera por una corriente eléctrica, pero no funcionaba en casos como el interior de un capacitor cargándose, donde no hay corriente real fluyendo por el dieléctrico, pero sí existe un campo magnético.</p>
+      <p>Para corregirlo, Maxwell propuso que un campo eléctrico variable en el tiempo también genera un campo magnético, como si fuera una “corriente”. A esta cantidad la llamó corriente de desplazamiento.</p>
+      <p>Su fórmula es:</p>
+      <div>\[I_d \equiv \varepsilon_0 \frac{d\Phi_E}{dt}\]</div>
+      <p><b>Ejemplo típico:</b></p>
+      <p>En un capacitor cargándose:</p>
+      <ul>
+        <li>No hay corriente real entre las placas.</li>
+        <li>Pero el campo eléctrico entre ellas aumenta.</li>
+        <li>Esto genera una <b>corriente de desplazamiento</b> que mantiene el campo magnético alrededor del circuito, ¡como si hubiera corriente real!</li>
+      </ul>
+      <a href="magnetismo.html#temario-magnetismo">👆</a>
+      <br><br>
+    </section>
+  </main>
+  <br>
+<div id="faqModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>❓ Preguntas Frecuentes</h2>
+    <details>
+      <summary>¿Qué es la electricidad?</summary>
+      <p>Es el conjunto de fenómenos relacionados con la presencia y movimiento de cargas eléctricas.</p>
+    </details>
+    <details>
+      <summary>¿Qué es el magnetismo?</summary>
+      <p>Es un fenómeno físico por el cual ciertos materiales ejercen fuerzas de atracción o repulsión.</p>
+    </details>
+    <details>
+      <summary>¿Dónde puedo hacer simulaciones?</summary>
+      <p>En la sección de <a href="simulaciones.html">Simulaciones</a> encontrarás actividades interactivas.</p>
+    </details>
+  </div>
+</div>
+  <footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>ElectroMag Academy</h3>
+      <p>Aprende sobre electricidad y magnetismo</p>
+      <p>Simulaciones de forma clara y didáctica</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Enlaces útiles</h4>
+      <ul>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="electricidad.html">Electricidad</a></li>
+        <li><a href="magnetismo.html">Magnetismo</a></li>
+        <li><a href="simulaciones.html">Simulaciones</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <p>Email: contacto@gmail.com</p>
+      <p>© 2025 ElectroMag Academy. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
